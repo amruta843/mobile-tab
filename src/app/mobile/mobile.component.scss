@@ -1,0 +1,52 @@
+.noImg{
+    height: 100%;
+    background-color: #eee;
+    border: 2px solid #eee;
+}
+.mimg{
+    height:350px;
+    //  width: 100%;
+    object-fit:cover;
+    
+}
+.card{
+    height: 100%;
+   
+}
+.card-header{
+    padding: 20px;
+    font-size: 30px ;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: cadetblue;
+
+}
+.mobile-card{
+    text-transform: capitalize;
+   
+    
+   
+}
+// .card-footer{
+// background-color: gray;
+// }
+
+.card-r{
+
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.brand{
+    font-size: 20px;
+    font-weight: 700;
+}
+.hilgt{
+font-size: 15px;
+font-weight: 700;
+}
+.card-l ul li{
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 600;
+}

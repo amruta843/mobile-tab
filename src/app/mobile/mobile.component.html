@@ -1,0 +1,55 @@
+
+
+<!-- <img [src]= "mobileArray[0].image" alt=""> -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body"*ngFor="let mobile of mobileArray">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid mimg" [src]="mobile.image" *ngIf="mobile.image.length>0; else noImg" 
+                            [alt]="mobile.name" [title]="mobile.name">
+                            <ng-template #noImg>
+                                <p class="noImg m-0 text-muted d-flex justify-content-center align-items-center">
+                                    No priview is available
+                                </p>
+                            </ng-template>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card brand">
+                                <div class="card-header">
+                                   {{mobile.name}}
+                                </div>
+                                <div class="card-body mobile-card">
+                                    <div class="row">
+                                    <div class="col-6 card-l">
+                                        <strong class="brand">Brand: </strong>  {{mobile.brand}}
+                                        <strong class="d-block hilgt">Highlights</strong>
+                                        <ul class="mt-1" type=".">
+                                            <li>128 GB ROM</li>
+                                               <li>15.49 cm (6.1 inch) Super Retina XDR Display</li> 
+                                                <li> + 12MP | 12MP Front Camera</li>
+                                                <li>Bionic Chip Processor</li>
+                                        </ul> 
+                                  
+                                    </div>
+                                    <div class="col-6 card-r text-right ">
+                                        <span class="">Rs.{{mobile.price}}</span> 
+                                       
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-between bg bg-dark">
+                                    <button class="btn btn-info ">Add to Cart</button>
+                                    <button class="btn btn-warning ">Buy Now</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
